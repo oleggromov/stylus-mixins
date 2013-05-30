@@ -1,0 +1,21 @@
+gradient-radial-cover(colorBg, colorShine)
+	background colorBg -webkit-radial-gradient(center center, circle cover, colorShine 0, colorBg 50%)
+	background colorBg -moz-radial-gradient(center center, circle cover, colorShine 0, colorBg 50%)
+	background colorBg -o-radial-gradient(center center, circle cover, colorShine 0, colorBg 50%)
+	background colorBg radial-gradient(circle at center center, colorShine 0, colorBg 50%)
+
+background-gradient(colorFrom, colorTo, direction) {
+	background-image -webkit-linear-gradient(direction, colorFrom, colorTo);
+	background-image -moz-linear-gradient(direction, colorFrom, colorTo);
+	background-image -o-linear-gradient(direction, colorFrom, colorTo);
+	background-image -ms-linear-gradient(direction, colorFrom, colorTo);
+	background-image linear-gradient(direction, colorFrom, colorTo);
+}
+
+background-svg(svgUrl, pngUrl, alignX = left, alignY = top, repeating = no-repeat)
+	background url(pngUrl) alignX alignY repeating
+	background rgba(0,0,0,0) url(svgUrl) alignX alignY repeating
+
+background-size()
+	-webkit-background-size arguments
+	background-size arguments

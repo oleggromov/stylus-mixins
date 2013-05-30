@@ -1,24 +1,23 @@
-box-reset()
-	padding 0
-	margin 0
-	outline 0
-	border 0
+@import 'box'
+@import 'background'
+@import 'shadow'
+@import 'transform'
 
-border-box()
-	-webkit-box-sizing border-box
-	-moz-box-sizing border-box
-	box-sizing border-box
+transition()
+	-webkit-transition arguments
+	-moz-transition arguments
+	-o-transition arguments
+	transition arguments
 
-inline-block()
-	display inline-block
-	vertical-align top
+animation()
+	-webkit-animation arguments
+	-o-animation arguments
+	animation arguments
 
-gradient-radial-cover(colorBg, colorShine)
-	background: colorBg -webkit-radial-gradient(center center, circle cover, colorShine 0, colorBg 50%);
-	background: colorBg -moz-radial-gradient(center center, circle cover, colorShine 0, colorBg 50%);
-	background: colorBg -o-radial-gradient(center center, circle cover, colorShine 0, colorBg 50%);
-	background: colorBg radial-gradient(circle at center center, colorShine 0, colorBg 50%);
-
-background-svg(svgUrl, pngUrl)
-	background url(pngUrl) left top no-repeat
-	background rgba(0,0,0,0) url(svgUrl) left top no-repeat
+user-select() 
+	-webkit-touch-callout none
+	-webkit-user-select none
+	-khtml-user-select none
+	-moz-user-select none
+	-ms-user-select none
+	user-select none
